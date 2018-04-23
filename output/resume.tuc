@@ -43,18 +43,30 @@ if not utilitydata.job.passes then utilitydata.job.passes = { } end
 
 utilitydata.job.passes.collected={
  ["itemgroup:itemize:1"]={
-  { 3, 0 },
+  { 1, 0 },
  },
  ["itemgroup:itemize:2"]={
-  { 3, 0 },
+  { 1, 0 },
  },
  ["itemgroup:itemize:3"]={
-  { 3, 0 },
+  { 1, 0 },
  },
  ["itemgroup:itemize:4"]={
-  { 3, 0 },
+  { 1, 0 },
  },
  ["itemgroup:itemize:5"]={
+  { 1, 0 },
+ },
+ ["itemgroup:itemize:6"]={
+  { 1, 0 },
+ },
+ ["itemgroup:itemize:7"]={
+  { 3, 0 },
+ },
+ ["itemgroup:itemize:8"]={
+  { 3, 0 },
+ },
+ ["itemgroup:itemize:9"]={
   { 2, 0 },
  },
 }
@@ -107,7 +119,7 @@ utilitydata.structures.counters.collected={
   { 0 },
  },
  ["itemgroup:itemize"]={
-  { 0, 3, 3, 3, 3, 2 },
+  { 0, 1, 1, 1, 1, 1, 1, 3, 3, 2 },
  },
  ["linenote"]={
   { 0 },
@@ -191,11 +203,35 @@ utilitydata.structures.lists.collected={
   },
  },
  {
+  ["metadata"]=7,
+  ["references"]={
+   ["internal"]=5,
+   ["order"]=2,
+   ["realpage"]=1,
+   ["section"]=3,
+  },
+  ["titledata"]={
+   ["title"]="September 2017 - March 2018",
+  },
+ },
+ {
+  ["metadata"]=7,
+  ["references"]={
+   ["internal"]=6,
+   ["order"]=3,
+   ["realpage"]=1,
+   ["section"]=3,
+  },
+  ["titledata"]={
+   ["title"]="December 2016 - March 2018",
+  },
+ },
+ {
   ["metadata"]=4,
   ["numberdata"]=11,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=5,
+   ["internal"]=7,
    ["realpage"]=1,
    ["reference"]="skills",
    ["section"]=4,
@@ -210,7 +246,7 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=13,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=6,
+   ["internal"]=8,
    ["realpage"]=1,
    ["reference"]="honors-and-awards",
    ["section"]=5,
@@ -225,7 +261,7 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=15,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=7,
+   ["internal"]=9,
    ["realpage"]=1,
    ["reference"]="relevant-coursework",
    ["section"]=6,
@@ -240,7 +276,7 @@ utilitydata.structures.lists.collected={
   ["numberdata"]=17,
   ["references"]={
    ["block"]="bodypart",
-   ["internal"]=9,
+   ["internal"]=11,
    ["realpage"]=1,
    ["reference"]="activities",
    ["section"]=7,

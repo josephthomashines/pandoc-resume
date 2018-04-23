@@ -1,5 +1,4 @@
-Joseph Thomas Hines III
-============
+# Joseph Thomas Hines III
 
 ----
 
@@ -11,33 +10,31 @@ Education
 
 :   **Bachelor, Computer Science**;  *Minor, Technology Innovation Management.*
 
-:   GPA: <++>
+:   GPA: **3.73**
 
 Experience
 ----------
 
-**Penn Mutual Life Insurance:** *Software and Web Development Co-op*
+September 2017 - March 2018
+: **Penn Mutual Life Insurance:** *Software and Web Development Co-op*
 
-* Developed and maintained various REST API's and internal web interfaces
+: * Developed and maintained various REST API's and internal web interfaces
+: * Worked with lead users to facilitate transition to one unified internal application
+: * Finished internal web application's first release
 
-* Worked with lead users to facilitate transition to one unified internal application
+December 2016 - March 2018
+: **Rockledge Borough:** *Public Works Laborer*
 
-* Finished internal web application's first release
-
-**Rockledge Borough:** *Public Works Laborer*
-
- * Manage inventory of industrial grade tools and machinery at garage
-
- * Maintain cleanliness of garage aswell as neighborhood parks and streets
-
- * Allow higher skilled coworkers to complete more difficult tasks by completing the manual labor
+: * Manage inventory of industrial grade tools and machinery at garage
+: * Maintain cleanliness of garage aswell as neighborhood parks and streets
+: * Complete manual labor to enable crew memebers to be more efficient
 
 Skills
 ----------
 
  + Operating System: Windows 10 and Linux (Debian and Arch)
  + Software: Microsoft Office, Jira, Jenkins, IntelliJ, Visual Studio, Atom
- + Languages: Java, C++, JavaScript, Python, Bash, HTML, SASS (CSS)
+ + Languages: Java, C++, JavaScript, Python, HTML, SASS (CSS), Bash
 
 Honors and Awards
 ----------
@@ -60,6 +57,8 @@ Activities
 ----------
  + Participant, Philly Codefest 2018, April 2018
  + Member, Drexel University Intramural Soccer, 2017 - Present
+
+----
 
 > <jth95@drexel.edu> • 215-983-0808 • 19 years old\
 > address - 21 Elm Avenue, Rockledge, Pennsylvania
