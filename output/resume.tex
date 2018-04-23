@@ -1,0 +1,185 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+%
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+%
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=000000]
+\definecolor[sectioncolor][h=000000]
+\definecolor[rulecolor][h=a7a7a7]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=10mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}]
+\setuphead[subsubsection][style=\bf]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+
+\section[title={Joseph Thomas Hines
+III},reference={joseph-thomas-hines-iii}]
+
+\thinrule
+
+\subsection[title={Education},reference={education}]
+
+\startdescription{2016-2021}
+  Drexel University, Philadelphia, PA
+
+  {\bf Bachelor, Computer Science}; {\em Minor, Technology Innovation
+  Management.}
+
+  GPA: <++>
+\stopdescription
+
+\subsection[title={Experience},reference={experience}]
+
+{\bf Penn Mutual Life Insurance:} {\em Software and Web Development
+Co-op}
+
+\startitemize
+\item
+  Developed and maintained various REST API's and internal web
+  interfaces
+\item
+  Worked with lead users to facilitate transition to one unified
+  internal application
+\item
+  Finished internal web application's first release
+\stopitemize
+
+{\bf Rockledge Borough:} {\em Public Works Laborer}
+
+\startitemize
+\item
+  Manage inventory of industrial grade tools and machinery at garage
+\item
+  Maintain cleanliness of garage aswell as neighborhood parks and
+  streets
+\item
+  Allow higher skilled coworkers to complete more difficult tasks by
+  completing the manual labor
+\stopitemize
+
+\subsection[title={Skills},reference={skills}]
+
+\startitemize[packed]
+\item
+  Operating System: Windows 10 and Linux (Debian and Arch)
+\item
+  Software: Microsoft Office, Jira, Jenkins, IntelliJ, Visual Studio,
+  Atom
+\item
+  Languages: Java, C++, JavaScript, Python, Bash, HTML, SASS (CSS)
+\stopitemize
+
+\subsection[title={Honors and Awards},reference={honors-and-awards}]
+
+\startitemize[packed]
+\item
+  Drexel College of Computing and Informatics Dean's List, Fall 2016 -
+  Spring 2017
+\item
+  A.J. Drexel Scholarship, Drexel University, 2016 - Present
+\item
+  Certificate of Merit, Career Management and Professional Development,
+  Drexel University, Winter 2017
+\stopitemize
+
+\subsection[title={Relevant Coursework},reference={relevant-coursework}]
+
+\startplacetable[location=none]
+\startxtable
+\startxtablebody[body]
+\startxrow
+\startxcell[align=middle] Advanced Programming Techniques \stopxcell
+\startxcell[align=middle] Computer Programming I and II \stopxcell
+\stopxrow
+\startxrow
+\startxcell[align=middle] Linear Algebra \stopxcell
+\startxcell[align=middle] Fundamentals of Physics I, II, and
+III \stopxcell
+\stopxrow
+\startxrow
+\startxcell[align=middle] Designing Innovative Organizations \stopxcell
+\startxcell[align=middle] Competing in Technology Industries \stopxcell
+\stopxrow
+\stopxtablebody
+\startxtablefoot[foot]
+\startxrow
+\startxcell[align=middle] Scientific Data Analysis \stopxcell
+\startxcell[align=middle] Computing and Informatics Design I, II, and
+III \stopxcell
+\stopxrow
+\stopxtablefoot
+\stopxtable
+\stopplacetable
+
+\subsection[title={Activities},reference={activities}]
+
+\startitemize[packed]
+\item
+  Participant, Philly Codefest 2018, April 2018
+\item
+  Member, Drexel University Intramural Soccer, 2017 - Present
+\stopitemize
+
+\startblockquote
+\useURL[url1][mailto:jth95@drexel.edu][][jth95@drexel.edu]\from[url1] •
+215-983-0808 • 19 years old\crlf
+address - 21 Elm Avenue, Rockledge, Pennsylvania
+\stopblockquote
+
+\stoptext
