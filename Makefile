@@ -2,6 +2,8 @@ OUT_DIR=output
 IN_DIR=markdown
 STYLES_DIR=styles
 STYLE=chmduquesne
+WEBDIR=../learning-vue-js/my-project/src
+
 
 all: html pdf docx rtf
 
@@ -21,11 +23,15 @@ html: init
 	for f in $(IN_DIR)/*.md; do \
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
 		echo $$FILE_NAME.html; \
-		pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
+		pandoc --standalone  \
 			--lua-filter=pdc-links-target-blank.lua \
+			--from markdown --to html \
+			--output $(WEBDIR)/assets/$$FILE_NAME.html $$f; \
+		pandoc --standalone \
 			--from markdown --to html \
 			--output $(OUT_DIR)/$$FILE_NAME.html $$f; \
 	done
+	awk -f template.awk $(WEBDIR)/assets/resume.html > $(WEBDIR)/components/Resume.vue
 
 docx: init
 	for f in $(IN_DIR)/*.md; do \
