@@ -24,10 +24,12 @@ html: init
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
 		echo $$FILE_NAME.html; \
 		pandoc --standalone  \
+			-css $(STYLES_DIR)/$(STYLE).css \
 			--lua-filter=pdc-links-target-blank.lua \
 			--from markdown --to html \
 			--output $(WEBDIR)/assets/$$FILE_NAME.html $$f; \
 		pandoc --standalone \
+			-css $(STYLES_DIR)/$(STYLE).css \
 			--from markdown --to html \
 			--output $(OUT_DIR)/$$FILE_NAME.html $$f; \
 	done

@@ -1,7 +1,7 @@
 FNR==1{print "<template>"}
 
-FNR>17 && FNR!=110{print($0)}
+FNR>18 && FNR!=205{print($0)}
 
 FNR==47{print "<br/>"}
 
-END{print "</template><style scoped>* {background-color: #eeeeee;background: #eeeeee;}</style>"}
+END{print "</template>"}
