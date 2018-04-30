@@ -60,6 +60,6 @@ Activities
 
 ----
 
-> <<++>> • 215-983-0808 • <jth95@drexel.edu>
+> <josephhines.xyz> • 215-983-0808 • <jth95@drexel.edu>
 
 > 21 Elm Avenue, Rockledge, Pennsylvania. 19046
