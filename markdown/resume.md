@@ -26,8 +26,8 @@ December 2016 - March 2018
 : **Rockledge Borough:** *Public Works Laborer*
 
 : * Manage inventory of industrial grade tools and machinery at garage
-: * Maintain cleanliness of garage aswell as neighborhood parks and streets
-: * Complete manual labor to enable crew memebers to be more efficient
+: * Maintain cleanliness of garage as well as neighborhood parks and streets
+: * Complete manual labor to enable crew members to be more efficient
 
 Skills
 ----------
