@@ -10,7 +10,7 @@ Education
 ---------
 
 2016-2021
-:   Drexel University, Philadelphia, PA. GPA: **3.73**
+:   Drexel University, Philadelphia, PA. **GPA**: *3.73*
 
 :   **Bachelor, Computer Science**;  *Minor, Technology Innovation Management.*
 
