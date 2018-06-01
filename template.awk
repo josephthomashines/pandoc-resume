@@ -1,6 +1,6 @@
 FNR==1{print "<template>\n<div>"}
 
-FNR>18 && FNR!=109 && FNR!=110 && $3!="215-983-0808" && $4!="Rockledge," {print($0)}
+FNR>18 && FNR!=108 && FNR!=107 && $3!="215-983-0808" && $4!="Rockledge," {print($0)}
 
 $1 ~ /<dt>/ {print "<br/>"}
 

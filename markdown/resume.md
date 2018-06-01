@@ -1,7 +1,3 @@
----
-papersize: legal
----
-
 # Joseph Thomas Hines III
 
 ----
