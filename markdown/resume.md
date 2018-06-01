@@ -1,3 +1,7 @@
+---
+papersize: legal
+---
+
 # Joseph Thomas Hines III
 
 ----
@@ -6,11 +10,9 @@ Education
 ---------
 
 2016-2021
-:   Drexel University, Philadelphia, PA
+:   Drexel University, Philadelphia, PA. GPA: **3.73**
 
 :   **Bachelor, Computer Science**;  *Minor, Technology Innovation Management.*
-
-:   GPA: **3.73**
 
 Experience
 ----------
