@@ -13,7 +13,7 @@ pdf: init
 		echo $$FILE_NAME.pdf; \
 		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
 			--from markdown --to context \
-			--variable papersize=letter \
+			--variable papersize=A4 \
 			--output $(OUT_DIR)/$$FILE_NAME.tex $$f > /dev/null; \
 		context $(OUT_DIR)/$$FILE_NAME.tex \
 			--result=$(OUT_DIR)/$$FILE_NAME.pdf > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \

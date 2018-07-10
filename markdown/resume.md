@@ -20,7 +20,7 @@ September 2017 - March 2018
 : * Worked with lead users to facilitate transition to one unified internal application
 : * Finished internal web application's first release
 
-December 2016 - March 2018
+December 2016 - Present
 : **Rockledge Borough:** *Public Works Laborer*
 
 : * Manage inventory of industrial grade tools and machinery at garage
@@ -54,7 +54,7 @@ Relevant Coursework
 Activities
 ----------
  + Participant, Philly Codefest 2018, April 2018
- + Member, Drexel University Intramural Soccer, 2017 - Present
+ + Member, Drexel University Intramural Soccer, 2017 - 2018
 
 ----
 
