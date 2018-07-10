@@ -58,6 +58,6 @@ Activities
 
 ----
 
-> josephhines.xyz • 215-983-0808 • <jth95@drexel.edu>
+> josephhines.xyz • (555)-555-5555 • <email@school.edu>
 
-> 21 Elm Avenue, Rockledge, Pennsylvania. 19046
+> 123 Main Street City, State ZIP
