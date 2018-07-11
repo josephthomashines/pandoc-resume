@@ -1,3 +1,5 @@
+Check out the .vue page of this resume [here.](https://josephhines.xyz/#/resume "My Resume")
+
 # Why?
 
 pandoc is a general markup converter that allows many different file formats.
@@ -11,6 +13,6 @@ If you came here from my website, that resume page is a vue template generated f
 
 I struggled initially as the template that pandoc provides was hard to interpret as someone with close to zero LaTeX experience.
 When I came across this mszep's repo, I took a look and realized that this would be a good place to start.
-mszep's template's were easy to understand and helped me learn how to use pandoc and LaTeX templates on my own.
+mszep's templates were easy to understand and helped me learn how to use pandoc and LaTeX templates on my own.
 
 
