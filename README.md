@@ -1,4 +1,4 @@
-Check out the .vue page of this resume [here.](https://josephhines.xyz/#/resume "My Resume")
+Check out the .vue page of this resume [here.](josephhines.xyz/#/resume "My Resume")
 
 # Why?
 
