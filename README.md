@@ -5,8 +5,11 @@ To run:
 - [Install Docker](https://www.docker.com/)
 - `git clone {repo}`
 - `cd pandoc-resume`
+
 - `docker build -t pandoc-resume .`
-- `docker run -it pandoc-resume`A
+- `docker run -it pandoc-resume`
+__or__
+- `docker run josephthomashines/dev:pandoc-resume`
 
 Now in the container"
 
