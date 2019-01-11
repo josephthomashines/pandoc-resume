@@ -31,7 +31,8 @@ COPY . $HOME/pandoc-resume
 RUN cp $HOME/pandoc-resume/configs/im_policy.xml /etc/ImageMagick/policy.xml
 
 # Define working directory.
-WORKDIR $HOME
+WORKDIR $HOME/pandoc-resume
+RUN git pull
 
 # Define default command.
 CMD ["/bin/bash"]
