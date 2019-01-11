@@ -24,8 +24,11 @@ RUN rm -rf $HOME/my-configs
 # Grab most recent resume version
 # RUN git clone https://github.com/josephthomashines/pandoc-resume.git $HOME/resume
 
-# Copy files
+# Copy repo into container
 COPY . $HOME/pandoc-resume
+
+# Copy ImageMagick policy config into /etc/
+RUN cp $HOME/pandoc-resume/configs/im_policy.xml /etc/ImageMagick/policy.xml
 
 # Define working directory.
 WORKDIR $HOME
