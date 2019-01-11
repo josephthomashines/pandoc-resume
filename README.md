@@ -1,3 +1,25 @@
+# pandoc-resume
+
+To run:
+
+- [Install Docker](https://www.docker.com/)
+- `git clone {repo}`
+- `cd pandoc-resume`
+- `docker build -t pandoc-resume .`
+- `docker run -it pandoc-resume`A
+
+Now in the container"
+
+- `cd pandoc-resume`
+- `make`
+
+View output in `output/`
+
+Feel free to edit files and run `make` to build.
+`make clean` is available to clean the output folder.
+
+---
+
 ### Check out the .jpg's of this resume [here.](https://josephthomashines.com/#resume "My Resume")
 
 # Why?
@@ -7,11 +29,4 @@ In my case, I use a singular markdown (.md) file which contains a loose structur
 This repo is now setup so that when I need to modify my resume, I change on markdown file, run my Makefile, and get back a .pdf, .docx, and .html file that all look the same.
 This allows me to easily maintain the content and structure of my resume across mediums very easily.
 
-If you came here from my website, that resume page is a vue template generated from a simple markdown file, some CSS, and a little AWK script.
-
-# Thanks to mszep
-
-I struggled initially as the template that pandoc provides was hard to interpret as someone with close to zero LaTeX experience.
-When I came across this mszep's repo, I took a look and realized that this would be a good place to start.
-mszep's templates were easy to understand and helped me learn how to use pandoc and LaTeX templates on my own.
 
