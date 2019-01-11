@@ -16,15 +16,16 @@ RUN apt-get remove -y wget && \
     apt-get clean
 
 # Grab shell config
-RUN git clone https://github.com/josephthomashines/arch-config-files.git $HOME/my-config
-RUN cp $HOME/my-config/shell/.b* $HOME
-RUN cp $HOME/my-config/shell/.v* $HOME
+RUN git clone https://github.com/josephthomashines/arch-config-files.git $HOME/my-configs
+RUN cp $HOME/my-configs/shell/.b* $HOME
+RUN cp $HOME/my-configs/shell/.v* $HOME
+RUN rm -rf $HOME/my-configs
 
 # Grab most recent resume version
 # RUN git clone https://github.com/josephthomashines/pandoc-resume.git $HOME/resume
 
 # Copy files
-COPY * $HOME/test-copy/
+COPY . $HOME/pandoc-resume
 
 # Define working directory.
 WORKDIR $HOME

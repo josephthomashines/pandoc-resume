@@ -16,6 +16,7 @@ pdf: init
 			--output $(OUT_DIR)/$$FILE_NAME.tex $$f > /dev/null; \
 		context $(OUT_DIR)/$$FILE_NAME.tex \
 			--result=$(OUT_DIR)/$$FILE_NAME.pdf > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
+		convert -density 600 $(OUT_DIR)/$$FILE_NAME.pdf $(OUT_DIR)/$$FILE_NAME-%02d.jpg; \
 	done
 
 html: init
@@ -41,6 +42,9 @@ rtf: init
 		echo $$FILE_NAME.rtf; \
 		pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.rtf; \
 	done
+
+jpg: pdf
+	(cd $(OUT_DIR) && sudo convert -density 300 example.pdf page_%02d.jpg)
 
 init: dir
 
