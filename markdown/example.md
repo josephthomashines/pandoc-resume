@@ -35,14 +35,16 @@ December 2016 - Present
 
 :   + Manage inventory of industrial grade tools and machinery at garage
 :   + Maintain cleanliness of garage as well as neighborhood parks and streets
+:   + Operate various machines for park and street maintainence/construction projects
 :   + Complete manual labor to enable crew members to be more efficient
+:   + Attend monthly council meetings to facilitate communication across departments
 
 Skills
 ----------
 
- + Operating System: Windows 7/10, Linux (Ubuntu/Arch), Mac OSX
+ + Operating Systems: Windows 7/10, Linux (Ubuntu/Arch), Mac OSX
  + Software: VSCode, Git, Microsoft Office, Azure DevOps, Jira, Jenkins, IntelliJ, Visual Studio, Docker
- + Languages: JavaScript(TypeScript), Java, C++, Python, HTML, SASS (CSS), Bash
+ + Languages: JavaScript(TypeScript), Java, C++, Python, C, SASS (CSS), Bash, awk
  + JavaScript Frameworks: React (TypeScript + Redux), Vue
 
 Honors and Awards
@@ -61,6 +63,8 @@ Relevant Coursework
 |Linear Algebra | Fundamentals of Physics I, II, and III |
 |Designing Innovative Organizations | Competing in Technology Industries |
 |Scientific Data Analysis | Computing and Informatics Design I, II, and III |
+|Data Structures | Discrete Mathematics |
+|Web and Mobile App Development | Systems Programming |
 
 Activities
 ----------
