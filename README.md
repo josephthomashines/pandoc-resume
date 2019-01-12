@@ -19,6 +19,9 @@ Now in the container"
 
 View output in `output/`
 
+To copy the output to your local machine (the host):
+`bash scripts/getOutput.sh`
+
 Feel free to edit files and run `make` to build.
 `make clean` is available to clean the output folder.
 

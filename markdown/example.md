@@ -6,33 +6,44 @@ Education
 ---------
 
 2016-2021
-:   Drexel University, Philadelphia, PA. **GPA**: *3.74*
+:   Drexel University, Philadelphia, PA. **GPA**: *3.79*
 
-:   **Bachelor, Computer Science**;  *Minor, Technology Innovation Management.*
+:   **Master of Science, Computer Science**; **Bachelor of Science, Computer Science**.
+
+:   *Minor, Technology Innovation Management.*
 
 Experience
 ----------
 
-September 2017 - March 2018
-: **Penn Mutual Life Insurance:** *Software and Web Development Co-op*
+September 2018 - March 2019
+:   **Bentley Systems:** *Web Development Co-op*
 
-: * Developed and maintained various REST API's and internal web interfaces
-: * Worked with lead users to facilitate transition to one unified internal application
-: * Finished internal web application's first release
+:   + Lead push to develop and maintain a well-designed internal style guide, library, and framework specific components.
+:   + Developed a React component library for internal use, using style from aforementioned library
+:   + Aided in development of GraphQL service for unifying multiple internal endpoints
+:   + Developed UI components/examples showcasing how to interface with GraphQL service
+
+September 2017 - March 2018
+:   **Penn Mutual Life Insurance:** *Software and Web Development Co-op*
+
+:   + Developed and maintained various REST APIs and internal web interfaces
+:   + Worked with lead users to facilitate transition to one unified internal application
+:   + Finished first release of internal web application
 
 December 2016 - Present
-: **Rockledge Borough:** *Public Works Laborer*
+:   **Rockledge Borough:** *Public Works Laborer*
 
-: * Manage inventory of industrial grade tools and machinery at garage
-: * Maintain cleanliness of garage as well as neighborhood parks and streets
-: * Complete manual labor to enable crew members to be more efficient
+:   + Manage inventory of industrial grade tools and machinery at garage
+:   + Maintain cleanliness of garage as well as neighborhood parks and streets
+:   + Complete manual labor to enable crew members to be more efficient
 
 Skills
 ----------
 
- + Operating System: Windows 10 and Linux (Debian and Arch)
- + Software: Microsoft Office, Jira, Jenkins, IntelliJ, Visual Studio, Atom
- + Languages: Java, C++, JavaScript, Python, HTML, SASS (CSS), Bash
+ + Operating System: Windows 7/10, Linux (Ubuntu/Arch), Mac OSX
+ + Software: VSCode, Git, Microsoft Office, Azure DevOps, Jira, Jenkins, IntelliJ, Visual Studio, Docker
+ + Languages: JavaScript(TypeScript), Java, C++, Python, HTML, SASS (CSS), Bash
+ + JavaScript Frameworks: React (TypeScript + Redux), Vue
 
 Honors and Awards
 ----------
@@ -44,8 +55,8 @@ Honors and Awards
 Relevant Coursework
 ----------
 
-| |
-|:--:|:--:|
+|||
+|:---:|:---:|
 |Advanced Programming Techniques | Computer Programming I and II |
 |Linear Algebra | Fundamentals of Physics I, II, and III |
 |Designing Innovative Organizations | Competing in Technology Industries |
@@ -58,6 +69,6 @@ Activities
 
 ----
 
-> josephhines.xyz • (555)-555-5555 • <email@school.edu>
+> josephthomashines.com • (XXX)-XXX-XX08 • <XXXXX@drexel.edu>
 
-> 123 Main Street City, State ZIP
+> Philadelphia, Pennsylvania
