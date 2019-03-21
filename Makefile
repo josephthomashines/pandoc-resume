@@ -1,55 +1,5 @@
-OUT_DIR=output
-IN_DIR=markdown
-STYLES_DIR=styles
-STYLE=chmduquesne
 
+.PHONY: all pdf jpg
 
-all: html pdf docx rtf
-
-pdf: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.pdf; \
-		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
-			--from markdown --to context \
-			--variable papersize=letter \
-			--output $(OUT_DIR)/$$FILE_NAME.tex $$f > /dev/null; \
-		context $(OUT_DIR)/$$FILE_NAME.tex \
-			--result=$(OUT_DIR)/$$FILE_NAME.pdf > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
-		convert -density 600 $(OUT_DIR)/$$FILE_NAME.pdf $(OUT_DIR)/$$FILE_NAME-%02d.jpg; \
-	done
-
-html: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.html; \
-		pandoc --standalone \
-			-css $(STYLES_DIR)/$(STYLE).css \
-			--from markdown --to html \
-			--output $(OUT_DIR)/$$FILE_NAME.html $$f; \
-	done
-
-docx: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.docx; \
-		pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.docx; \
-	done
-
-rtf: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.rtf; \
-		pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.rtf; \
-	done
-
-jpg: pdf
-	(cd $(OUT_DIR) && sudo convert -density 300 example.pdf page_%02d.jpg)
-
-init: dir
-
-dir:
-	mkdir -p $(OUT_DIR)
-
-clean:
-	rm -rf $(OUT_DIR)
+pdf:
+	pandoc -o "resume.pdf" -s "markdown/resume.md" "--template=./latex/resume.latex"
