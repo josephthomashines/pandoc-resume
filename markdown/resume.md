@@ -1,6 +1,4 @@
 ---
-papersize: a4
-documentclass: article
 header-includes:
   - \usepackage{multicol}
   - \newcommand{\hideFromPandoc}[1]{#1}
