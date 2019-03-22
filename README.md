@@ -8,3 +8,4 @@
   - Mac -> MacTex
   - Linux -> TexLive
   - Windows -> MikTex
+- Charter Font

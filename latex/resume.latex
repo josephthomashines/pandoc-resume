@@ -53,7 +53,6 @@ $endif$
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
 $if(natbib)$
 \usepackage{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
@@ -141,11 +140,21 @@ $if(lang)$
 $endif$
 
 % Mine Mine MINE!
+\usepackage{xltxtra,xunicode}
 \def\tightlist{}
 \pagestyle{empty}
 \usepackage{multicol}
-\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true]{microtype}
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$, letterpaper, margin=0.75in]{geometry}
+\setmainfont[
+BoldFont={Charter-Black},
+ItalicFont={Charter-Italic},
+ BoldItalicFont={Charter-BlackItalic}
+ ]{Charter-Roman}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\definecolor{MyRed}{HTML}{FF4136}
+\sectionfont{\color{MyRed}}
+\subsectionfont{\color{MyRed}}
 % not mine :(
 
 $if(title)$
