@@ -14,7 +14,7 @@ header-includes:
 
 ## Education
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Drexel University_, Philadelphia, PA. **GPA:** _3.79_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Drexel University_, Philadelphia, PA. **GPA:** _3.8_
 
 Anticipated Graduation: _2021_.
 
