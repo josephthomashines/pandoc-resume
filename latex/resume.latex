@@ -152,9 +152,9 @@ ItalicFont={Charter-Italic},
  ]{Charter-Roman}
 \usepackage{xcolor}
 \usepackage{sectsty}
-\definecolor{MyRed}{HTML}{FF4136}
-\sectionfont{\color{MyRed}}
-\subsectionfont{\color{MyRed}}
+\definecolor{MyColor}{HTML}{FF5126}
+\sectionfont{\color{MyColor}}
+\subsectionfont{\color{MyColor}}
 % not mine :(
 
 $if(title)$
