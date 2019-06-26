@@ -1,18 +1,8 @@
-
 SHELL := /bin/bash
 
-LOCAL_TAG=pandoc-container
+LOCAL_TAG=local-josephthomashines/dev
 
-.PHONY: all pdf jpg build help test run
-
-pdf:
-	pandoc -o "output/resume.pdf" -s --latex-engine="xelatex" "markdown/resume.md" "--template=./latex/resume.latex"
-
-jpg:
-	convert -quality 100 -density 600x600 "output/resume.pdf" "output/resume"-%d.jpg
-
-all:
-	make pdf && make jpg
+.PHONY: build
 
 build:
 	sudo docker build -t ${LOCAL_TAG} .
@@ -33,5 +23,5 @@ test:
 
 # This spins up a container with all ports exposed, mounted on the current directory
 run:
-	sudo docker run -it --rm --network host -v $(shell pwd):/home josephthomashines/pandoc
+	sudo docker run -it --rm --network host -v $(shell pwd):/home josephthomashines/dev
 

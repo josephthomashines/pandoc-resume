@@ -145,11 +145,11 @@ $endif$
 \pagestyle{empty}
 \usepackage{multicol}
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$, letterpaper, margin=0.75in]{geometry}
-\setmainfont[
-BoldFont={Charter-Black},
-ItalicFont={Charter-Italic},
- BoldItalicFont={Charter-BlackItalic}
- ]{Charter-Roman}
+% \setmainfont[
+% BoldFont={Charter-Black},
+% ItalicFont={Charter-Italic},
+% BoldItalicFont={Charter-BlackItalic}
+% ]{Charter-Roman}
 \usepackage{xcolor}
 \usepackage{sectsty}
 \definecolor{MyColor}{HTML}{FF5126}
