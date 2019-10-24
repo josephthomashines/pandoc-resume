@@ -1,11 +1,5 @@
-# Pandoc Resume
+# Resume
 
-🧰 **Requirements**
-
-- pandoc
-- ImageMagick (convert)
-- Latex
-  - Mac -> MacTex
-  - Linux -> TexLive
-  - Windows -> MikTex
-- Charter Font
+Dockerfile, LaTex files, and fonts needed to build my resume.
+Provides a consistent, portable environment to allow me to easily
+edit my resume without messing with local packages/settings.
