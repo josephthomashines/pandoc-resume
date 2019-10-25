@@ -1,19 +1,21 @@
 \date{}
-\documentclass[12pt]{article}
-\usepackage{titling}
+\documentclass[10pt]{article}
 \usepackage[letterpaper, margin=0.75in]{geometry}
+\usepackage{titling}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{adjustbox}
+\usepackage{indentfirst}
 \usepackage{listings}
 \usepackage{color}
 \usepackage{xcolor}
 \usepackage{sectsty}
 \usepackage{xltxtra,xunicode}
 
+%\setlength\parindent{0pt}
 \setmainfont[
 BoldFont={Charter-Black},
 ItalicFont={Charter-Italic},
@@ -25,33 +27,49 @@ ItalicFont={Charter-Italic},
 
 \begin{document}
 
+% Title
 \section*{Joseph Thomas Hines III}
 \label{sec:title}
 
 \begin{multicols}{2}
-	Test 1
-	Test 2
-	Test 3
-	Test 4
-	Test 5
-	Test 6
-	Test 7
-	Test 8
-	Test 9
-	Test 10
+% Left column
+\subsection*{Education}%
+\label{sub:Education}
+
+\emph{Drexel University}, Philadelphia, PA. \textbf{GPA:} \emph{3.79}.
+
+\emph{Anticipated Graduation:} June 2021.
+
+\null
+
+\textbf{Master of Science, Computer Science.}
+
+\textbf{Bachelor of Science, Computer Science.}
+
+\emph{Minor, Technology Innovation Management}
+
+\subsection*{Skills}%
+\label{sub:Skills}
+
+\subsection*{Honors and Awards}%
+\label{sub:Honors and Awards}
+
+\subsection*{Activities}%
+\label{sub:Activities}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vfill\null
 \columnbreak
-	Test 1b
-	Test 2b
-	Test 3b
-	Test 4b
-	Test 5b
-	Test 6b
-	Test 7b
-	Test 8b
-	Test 9b
-	Test 10b
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Right column
+
+\subsection*{Experience}%
+\label{sub:Experience}
+
 \end{multicols}
+
+\subsection*{Relevant Coursework}%
+\label{sub:Relevant Coursework}
 
 
 \end{document}
