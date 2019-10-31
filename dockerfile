@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM josephthomashines/dev
+FROM josephthomashines/dev:latest
 
 # Fix apt get issues
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
