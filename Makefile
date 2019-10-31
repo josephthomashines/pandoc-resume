@@ -27,5 +27,5 @@ test:
 
 # This spins up a container with all ports exposed, mounted on the current directory
 run:
-	sudo docker run -it --rm --network host -v $(shell pwd):/mounted josephthomashines/tex
+	sudo docker run -it --rm --network host -v $(shell pwd):/mounted josephthomashines/${LOCAL_TAG}
 
