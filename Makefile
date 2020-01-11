@@ -6,7 +6,7 @@ LOCAL_TAG=tex
 .PHONY: pdf build help test run
 
 pdf:
-	xelatex new/resume.tex
+	xelatex tex/resume.tex
 
 build:
 	sudo docker build -t ${LOCAL_TAG} .
