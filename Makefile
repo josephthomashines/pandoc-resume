@@ -3,10 +3,14 @@ SHELL := /bin/bash
 
 LOCAL_TAG=tex
 
-.PHONY: pdf build help test run
+.PHONY: clean pdf build help test run
+
+clean:
+	rm -rf output
 
 pdf:
-	xelatex tex/resume.tex
+	mkdir -p output
+	xelatex -output-directory output tex/resume.tex
 
 build:
 	sudo docker build -t ${LOCAL_TAG} .

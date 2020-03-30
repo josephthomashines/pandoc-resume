@@ -1,15 +1,9 @@
-#
-# Ubuntu Dockerfile
-#
-# https://github.com/dockerfile/ubuntu
-#
 
-# Pull base image.
 FROM josephthomashines/dev:latest
 
 # Install tex packages
 RUN \
-  pacman -Sy --noconfirm \
+  yay -Sy --noconfirm \
     texlive-most
 
 # Copy fonts into system fonts directory
