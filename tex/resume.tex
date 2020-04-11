@@ -1,20 +1,23 @@
-\date{}
 \documentclass[10pt]{article}
-\usepackage[letterpaper, margin=0.75in]{geometry}
+
+% Package imports
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{float}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{float}
-\usepackage{amsmath}
-\usepackage[english]{babel}
-\usepackage{multicol}
-\usepackage{adjustbox}
 \usepackage{indentfirst}
+\usepackage[letterpaper, margin=0.75in]{geometry}
 \usepackage{listings}
-\usepackage{color}
-\usepackage{xcolor}
+\usepackage{multicol}
 \usepackage{sectsty}
+\usepackage{xcolor}
 \usepackage{xltxtra,xunicode}
 
+% Link coloring
 \pagestyle{empty}
 \hypersetup{
     colorlinks=true,
@@ -22,6 +25,8 @@
     filecolor=magenta,
     urlcolor=blue,
 }
+
+% Font setup
 \setmainfont[
 BoldFont={Charter-Black},
 ItalicFont={Charter-Italic},
@@ -38,15 +43,18 @@ ItalicFont={Charter-Italic},
 \label{sec:title}
 
 \begin{multicols}{2}
+\setlength\multicolsep{0pt}
+
 % Left column
 \subsection*{Education}%
 \label{sub:Education}
 
+\vspace{-\topsep}
 \emph{Drexel University}, Philadelphia, PA. \textbf{GPA:} \emph{3.79}.
 
 \emph{Anticipated Graduation:} June 2021.
 
-\null
+\vspace{0.2em}
 
 \textbf{Master of Science, Computer Science.}
 
@@ -54,38 +62,18 @@ ItalicFont={Charter-Italic},
 
 \emph{Minor, Technology Innovation Management}
 
+\vspace{-\topsep}
 \subsection*{Skills}%
 \label{sub:Skills}
 
-\begin{itemize}
-\setlength\itemsep{0.5em}
-\item \textbf{Operating Systems:} Arch, Windows, OSX
-\item \textbf{Software:} VSCode, Git, Microsoft Office, Docker, Azure DevOps,
+\vspace{-\topsep}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \textbf{Operating Systems:} Arch Linux, Windows, OSX
+\item \textbf{Software:} VSCode, Microsoft Office, Azure DevOps,
 	IntelliJ, Eclipse, Visual Studio
 \item \textbf{Languages:} JavaScript, TypeScript, CSS, Sass, Python, Go,
-	Bash, Haskell, Java, C, C++
-\item \textbf{Frameworks/Libraries:} React, WebGL
-\end{itemize}
-
-\subsection*{Honors and Awards}%
-\label{sub:Honors and Awards}
-
-\begin{itemize}
-\setlength\itemsep{0.5em}
-\item \textbf{Drexel College of Computing and Informatics Dean's List},
-	Fall 2016 - Spring 2017
-\item \textbf{A.J. Drexel Scholarship}, Drexel University, 2016 - Present
-\item \textbf{Certificate of Merit}, Career Management and Profession Development, Drexel University, Winter 2017.
-\end{itemize}
-
-\subsection*{Activities}%
-\label{sub:Activities}
-
-\begin{itemize}
-\setlength\itemsep{0.5em}
-\item \emph{Member}, Upsilon Pi Epsilon, Drexel Chapter, Fall 2019 - Present
-\item \emph{Participant}, Philly Codefest 2018
-\item \emph{Member}, Drexel University Intramural Soccer, 2017-2018
+	Bash, Haskell, Java, SQL, C, C++
+\item \textbf{Tools/Libraries:} Git, Docker, npm, React, numpy, Keras, Flask
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,17 +82,43 @@ ItalicFont={Charter-Italic},
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Right column
 
+\subsection*{Honors and Awards}%
+\label{sub:Honors and Awards}
+
+\vspace{-\topsep}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \textbf{Drexel College of Computing and Informatics Dean's List}, x8
+\item \textbf{A.J. Drexel Scholarship}, Drexel University, 2016 - Present
+\item \textbf{Certificate of Merit}, Career Management and Profession Development, Drexel University, Winter 2017.
+\end{itemize}
+
+\vspace{-\topsep}
+\subsection*{Activities}%
+\label{sub:Activities}
+
+\vspace{-\topsep}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+\item \emph{Member}, Upsilon Pi Epsilon, Drexel Chapter, Fall 2019 - Present
+\item \emph{Participant}, Philly Codefest 2018
+\end{itemize}
+
+\vfill\null
+\end{multicols}
+
+\vspace{-3.5em}
 \subsection*{Experience}%
 \label{sub:Experience}
 
 %%%
-\textbf{Bentley Systems:} (9/18 - 3/19)
-
+\vspace{-0.5em}
+\textbf{Bentley Systems,}
 \emph{Web Development Co-op}
+(9/18 - 3/19)
 
+\vspace{-\topsep}
 \begin{itemize}
-\setlength\itemsep{0.5em}
-\item Led push to develop and maintain a well-designed internal style
+\setlength\itemsep{-0.5em}
+\item Created and maintained a well-designed internal style
 	guide, library, and framework specific components.
 \item  Developed a React component system for internal use, using style
 	from aforementioned library
@@ -115,25 +129,30 @@ interface with GraphQL service
 \end{itemize}
 
 %%%
-\textbf{Penn Mutual Life Insurance:} (9/17 - 3/18)
-
+\vspace{-0.5em}
+\textbf{Penn Mutual Life Insurance,}
 \emph{Software and Web Development Co-op}
+(9/17 - 3/18)
 
+\vspace{-\topsep}
 \begin{itemize}
-\setlength\itemsep{0.5em}
+\setlength\itemsep{-0.5em}
 \item Developed and maintained various REST APIs and internal web interfaces
 \item Worked with lead users to facilitate transition to one unified
 	internal application
-\item Finished first release of internal web application
+\item Finished first release of internal web application, positive feedback from
+  100s of users across the company
 \end{itemize}
 
 %%%
-\textbf{Rockledge Borough:} (12/16 - 1/19)
-
+\vspace{-0.5em}
+\textbf{Rockledge Borough,}
 \emph{Public Works Laborer}
+(12/16 - 1/19)
 
+\vspace{-\topsep}
 \begin{itemize}
-\setlength\itemsep{0.5em}
+\setlength\itemsep{-0.5em}
 \item Manage inventory of industrial grade tools and machinery
 at garage
 \item Maintain cleanliness of garage as well as neighborhood
@@ -144,29 +163,63 @@ parks and streets
 efficient
 \end{itemize}
 
-\end{multicols}
+\vspace{-2em}
+\subsection*{Projects}%
+\label{sub:Projects}
 
-\subsection*{Relevant Coursework}%
-\label{sub:Relevant Coursework}
+\vspace{-0.5em}
+\textbf{Learning To See in the Dark,}
+\emph{Machine Learning, Frontend Web}
+(CS583 - Computer Vision)
 
-\null
+\indent \indent About: \href{https://jzlotek.github.io/cs583-final/}{jzlotek.github.io/cs583-final/}
+
+\vspace{-\topsep}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item \textbf{Technology:} python3, tensorflow, keras, Flask, npm, React, JavaScript, CSS, Google Colab
+\item Started with the repository produced by a research project, written in a deprecated tensorflow version
+\item Translated the 27-layer CNN to keras and optimized all processes to be batched and run on average hardware
+\item Created a simple webapp that allowed users to upload images and receive that output of the model
+\end{itemize}
+
+\vspace{-0.75em}
+\textbf{Municipal Solutions}
+\emph{Fullstack Web}
+(CS530 - Designing User Interfaces)
+
+\indent \indent Source: \href{https://github.com/josephthomashines/cs530-project}{github.com/josephthomashines/cs530-project}
+
+\vspace{-\topsep}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item \textbf{Technology:} python3, Flask, sqlite3, Bootstrap, JavaScript, OpenLayers, CSS
+\item Using experience from public works, create a solution for planning road closures
+\item Enable users to create and sign into accounts, where the can create and work on several projects
+\item Allow users to interact with a map and place resources like barricades an vehicles
+\item Combine the map with a personnel list and a plan to make a fully integrated workflow
+\item Generate a report detailing the resources required for the plan and how to execute it
+\end{itemize}
+
+\vspace{-0.75em}
+\textbf{Checkers}
+\emph{Fullstack Web}
+(CS451 - Software Engineering)
+
+\indent \indent Source: \href{https://github.com/josephthomashines/cs451-project}{github.com/josephthomashines/cs451-project}
+
+\vspace{-\topsep}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item \textbf{Technology:} npm (yarn), TypeScript, express, CSS
+\item Create an online multiplayer checkers game, using the USACheckers ruleset
+\item Enable players to enter a queue on the server and be paired into games
+\item Provide a simple and fast interface to enable a satisfying gameplay experience
+\end{itemize}
+
+\hrulefill
 
 \begin{center}
-\begin{tabular}{cc}
-	\hline
-	Advanced Programming Techniques & Computer Programming I and II \\
-	Linear Algebra & Fundamentals of Physics I, II, and III \\
-	Designing Innovative Organizations & Competing in Technology Industries \\
-	Scientific Data Analysis & Computing and Informatics Design I, II, and III \\
-	Data Structures & Discrete Mathematics \\
-	Web and Mobile App Development & Systems Programming  \\
-	\hline
-\end{tabular}
-
-\null
-
-\null
-
 \begin{tabular}{c}
 	\href{http://josephthomashines.com}{josephthomashines.com} \\
 	Philadelphia, Pennsylvania \\
